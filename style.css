@@ -1,0 +1,40 @@
+.flex{
+    display:flex
+}
+
+.flex div {
+	padding: 1em;
+	border: 1px solid black;
+	min-height: 170px;
+    min-width: 250px;
+}
+
+.dropContainer div {
+	border: 1px solid black;
+	padding: .5em;
+	max-width: 150px;
+    min-height: 24px;
+}
+
+.dropContainer div.over {
+	border: 2px dotted black;
+}
+
+button[draggable] {
+	display: block;
+	cursor: move;
+}
+
+[draggable].dragging {
+	opacity: 1;
+	cursor: pointer !important;
+}
+
+button[aria-pressed=true] {
+	background-color: #aaa;
+}
+/* 
+span {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+} */

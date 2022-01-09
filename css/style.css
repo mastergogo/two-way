@@ -1,0 +1,216 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font: 14px/18px Roboto, sans-serif;
+  margin:15px auto;
+}
+
+.mainWrapper{
+  border: 1px solid;
+  box-shadow: 0 0 1px 0 #888888;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background-color: #E5F2EB;
+}
+
+.heading{
+  background-color: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.footer{
+  background-color: #81B257;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.activityWrapper {
+  padding: 4px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.quizArea {
+  flex-basis: 60%;
+  position: relative;
+}
+
+.activityArea {
+  flex-basis: 40%;
+}
+.dragContainer{min-height: 70%;}
+
+.quizArea .mainImage{
+  height: 100%;
+  width: 100%;
+}
+
+.dropAreaWrapper {
+  height:100%;
+  width: 100%;
+  position: relative;
+  top: -100%;
+}
+
+.dropAreaWrapper .dropArea{
+  position: absolute;
+  
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset !important;
+  color: #007098 !important;
+}
+
+.dropAreaWrapper .dropArea.over {
+  border: 2px dashed #007098;
+}
+
+.dropAreaWrapper .dropArea .dragItem{
+  height: 100%;
+  width: 100%;
+  background: rgb(234, 245, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  word-break: break-word;
+  border: 2px solid #000;
+}
+
+.dropAreaWrapper .dragItem.disabled{
+  pointer-events: none;
+  border-color: transparent; 
+}
+
+#dropArea1 {
+  left: 201px;
+  top: 15px;
+  width: 175px;
+  height: 79px;
+}
+
+#dropArea2 {
+  right: 24px;
+  top: 15px;
+  height: 79px;
+  width: 192px;
+}
+
+#dropArea3 {
+  right: 94px;
+  top: 112px;
+  width: 122px;
+  height: 102px;
+}
+
+ #dropArea4 {
+  right: 24px;
+  top: 232px;
+  width: 145px;
+  height: 62px;
+}
+
+#dropArea5 {
+  right: 94px;
+  top: 312px;
+  width: 73px;
+  height: 57px;
+}
+
+ #dropArea6 {
+  left: 195px;
+  bottom: 28px;
+  width: 162px;
+  height: 65px;
+}
+
+ #dropArea7 {
+  left: 77px;
+  bottom: 25px;
+  width: 63px;
+  height: 71px;
+}
+
+.instruction {
+  font-weight: bold;
+  margin: 15px auto;
+  text-align: left;
+}
+
+.dragItemsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:15px;
+}
+
+.dragItemsWrapper .dragItem {
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+  padding: 1px 8px;
+  box-shadow: 10px 9px 3px -6px rgb(0 0 0 / 26%);
+  -webkit-box-shadow: 10px 9px 3px -6px rgb(0 0 0 / 26%);
+  -moz-box-shadow: 10px 9px 3px -6px rgba(0,0,0,0.26);
+  border: 1px solid #FFF;
+  cursor: grab;
+}
+
+.dragItemsWrapper .dragItem.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.dragItem[aria-pressed=true] {
+  border: 2px solid #FFF000 !important;
+}
+
+.dragItem:hover,
+.dragItem:active,
+.dragItem:focus{
+  cursor: pointer;
+  border: 2px solid #FFF000;
+}
+
+.btnWrapper{
+  text-align: left;
+  margin-top:15px;
+}
+
+.btnWrapper .button {
+  background-color: #FFF000;
+  border-radius: 4px;
+  color: #000;
+  padding:5px 15px;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

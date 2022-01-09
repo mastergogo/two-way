@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Matching</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="http://bernardo-castilho.github.io/DragDropTouch/DragDropTouch.js"></script>
+        <!--Make draggable attribute work on iPhone and work better than default on iPad.-->
+    </head>
+    <body>
+        <div class="mainWrapper">
+            <div role="main">
+                <h1 class="heading">Lab Activity | Classroom Floor Plan</h1>
+                <div class="activityWrapper">
+                    <section class="quizArea">
+                        <img src="images/image.png" class="mainImage" alt="floor plan"/>
+                        <section class="dropAreaWrapper">
+                            <div 
+                                class="dropArea" 
+                                id="dropArea1" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 1</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea2" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 2</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea3" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 3</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea4" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 4</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea5" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 5</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea6" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 6</span>
+                            </div>
+                            <div 
+                                class="dropArea" 
+                                id="dropArea7" 
+                                tabindex="0" 
+                                aria-dropeffect="move"
+                            ><span class="sr-only">Drop center 7</span>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="activityArea">
+                        <p class="instruction">Select each label and place them onto the floor plan to arrange the learning center. Then, press Submit.</p>
+                        <div tabindex="0" class="dragContainer" aria-labelledby="mainAreaLbl">
+                            <span class="sr-only" id="mainAreaLbl"> Main area </span>
+                            <div class="dragItemsWrapper">
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem1" 
+                                    tabindex="0"
+                                    role="button"
+                                >Science Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem2" 
+                                    tabindex="0"
+                                    role="button"
+                                >Math Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem3" 
+                                    tabindex="0"
+                                    role="button"
+                                >Reading Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem4" 
+                                    tabindex="0"
+                                    role="button"
+                                >Sensory and Art Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem5" 
+                                    tabindex="0"
+                                    role="button"
+                                >Writing Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem6" 
+                                    tabindex="0"
+                                    role="button"
+                                >Dramatic Play/Puppet Center</div>
+                                <div 
+                                    class="dragItem" 
+                                    aria-pressed="false" 
+                                    draggable="true" 
+                                    id="dragItem7" 
+                                    tabindex="0"
+                                    role="button"
+                                >Block/Travel Center</div>
+                            </div>
+                        </div>
+                        <div class="btnWrapper">
+                            <!-- <button class="button" id="resetBtn">Reset</button> -->
+                            <button class="button" disabled id="submitBtn">Submit</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer">
+                <div>Introduction</div>
+            </footer>
+            <div id="liveRegion" role="alert" class="xsr-only"></div>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script src="scripts/dragdrop.js"></script>
+            <!-- <script src="scripts/dragdrop.minified.js"></script> -->
+        </div>
+    </body>
+</html>
